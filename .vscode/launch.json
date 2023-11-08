@@ -40,6 +40,16 @@
             "localRoot": "${workspaceFolder}/",
             "mode": "listen",
             "port": 5555
+        },
+        {
+            "type": "quickjs",
+            "request": "attach",
+            "name": "Attach QuickJS source maps",
+            "sourceMaps": {
+                "${workspaceFolder}/test-source-maps/dist/bundle.js.map": "${workspaceFolder}/test-source-maps/src"
+            },
+            "mode": "listen",
+            "port": 5555,
         }
     ]
 }
